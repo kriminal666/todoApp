@@ -19,3 +19,7 @@ Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
 ]);
+
+Route::resource('api/todos','TodosController');
+
+Route::get('todoapp','TodoAppController@index');
